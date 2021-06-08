@@ -2,7 +2,6 @@ package assignment3;
 import Entities.Campaign;
 import Entities.Customer;
 import Entities.Product;
-import Entities.Sale;
 import Managers.CampaignManager;
 import Managers.CustomerCheckMaganer;
 import Managers.CustomerManager;
@@ -38,10 +37,8 @@ public class Main {
 		
 		
 		System.out.println("------------");
-		Sale sale1 = new Sale("Satýþ");
-		SaleManager saleManager = new SaleManager(customer1, game1, campaign1);
-		saleManager.add(sale1);
-		saleManager.delete(sale1);
+		SaleManager saleManager = new SaleManager();
+		saleManager.add(customer1, game1, campaign1);
 		
 		
 	}

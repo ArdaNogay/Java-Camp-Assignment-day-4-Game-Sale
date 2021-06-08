@@ -1,8 +1,10 @@
 package Interfaces;
 
-import Entities.Sale;
+import Entities.Campaign;
+import Entities.Customer;
+import Entities.Product;
+
 
 public interface SaleService {
-	void add(Sale sale);
-	void delete(Sale sale);
+	void add(Customer customer,Product product,Campaign campaign);
 }
